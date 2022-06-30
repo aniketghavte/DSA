@@ -45,9 +45,17 @@ public class Recursion {
         fact += n;
         pritnFactorial(n-1,fact);
     }
+
+    // qs5 print fibonacci series
+    public static void printFibonacci(int a,int b,int n){
+        if (n==0){
+            return;
+        }
+        System.out.println(a);
+        printFibonacci(b,a+b,n-1);
+    }
     public static void main(String[] args) {
 
-        printSum(5,0);
-
+        printFibonacci(0,1,10);
     }
 }
