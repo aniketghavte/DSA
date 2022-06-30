@@ -1,4 +1,4 @@
-package com.Aniketstart;
+package com.Aniketstart.Arrays;
 
 class RotateArray {
     public static void main(String[] args) {

@@ -1,10 +1,6 @@
-package com.Aniketstart;
+package com.Aniketstart.Arrays;
 
-import java.awt.*;
-import java.sql.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 class student{
     String name;

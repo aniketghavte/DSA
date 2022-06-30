@@ -1,8 +1,8 @@
-package com.Aniketstart;
+package com.Aniketstart.Stack;
 
 import java.util.ArrayList;
 
-class Stack2{
+class MyStack {
     ArrayList<Integer> list = new ArrayList<>();
 
     public boolean isEmpty(){
@@ -14,34 +14,37 @@ class Stack2{
     }
 
     public int pop(){
-        int top = list.get(list.size() -1);
+        if(isEmpty()){
+            return -1;
+        }
+        int top = list.get(list.size()-1);
         list.remove(list.size()-1);
         return top;
     }
 
     public int peek(){
-        if(isEmpty()){
+
+        if (isEmpty()){
             return -1;
         }
         return list.get(list.size()-1);
     }
-}
 
-public class Stack_imp_with_ArrayList {
+}
+public class StackimpwithArray {
+
     public static void main(String[] args) {
 
-
-        Stack2 s = new Stack2();
+        MyStack s =new MyStack();
         s.push(1);
         s.push(2);
         s.push(3);
-        s.push(4);
         s.pop();
-
 
         while (!s.isEmpty()){
             System.out.println(s.peek());
             s.pop();
         }
+
     }
 }

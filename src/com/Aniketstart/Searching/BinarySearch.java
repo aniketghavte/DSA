@@ -1,4 +1,4 @@
-package com.Aniketstart;
+package com.Aniketstart.Searching;
 
 
 public class BinarySearch {

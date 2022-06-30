@@ -1,4 +1,4 @@
-package com.Aniketstart;
+package com.Aniketstart.Arrays;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
